@@ -1,0 +1,35 @@
+{
+    "name": "bluefeather/jetstream-filemaker",
+    "description": "An extension for Laravel Jetstream to make it work with FileMaker as a primary data source",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Nahodyl",
+            "email": "david@bluefeathergroup.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "bluefeather/eloquent-filemaker": "^0.0.28",
+        "laravel/jetstream": "^2.8",
+        "laravel/sanctum": "^2.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlueFeather\\JetstreamFileMaker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlueFeather\\JetstreamFileMaker\\Providers\\JetstreamFileMakerServiceprovider",
+                "BlueFeather\\JetstreamFileMaker\\Providers\\PasswordResetServiceProvider",
+                "BlueFeather\\JetstreamFileMaker\\Providers\\FileMakerValidationServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.5"
+    }
+}
