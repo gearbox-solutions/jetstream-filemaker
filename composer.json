@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BlueFeather\\JetstreamFileMaker\\Providers\\JetstreamFileMakerServiceprovider",
+                "BlueFeather\\JetstreamFileMaker\\Providers\\JetstreamFileMakerServiceProvider",
                 "BlueFeather\\JetstreamFileMaker\\Providers\\PasswordResetServiceProvider",
                 "BlueFeather\\JetstreamFileMaker\\Providers\\FileMakerValidationServiceProvider"
             ]
