@@ -11,7 +11,7 @@ This package is built and maintained by [Blue Feather](https://www.bluefeathergr
 ## Prepare your FileMaker database
 
 ### Quickstart with an example FileMaker database
-If you just want to see an example of Jetstream working with FileMaker you can unzip and use the `Jetstream-FileMaker.fmp12` file included in the `dist` folder as an example data source. This file has been configured with the minimum necessary fields to work with Jetstream and already has layouts ready for accessing through the Data API. You can host this file on your FileMaker Server and use it as a testing ground to see Laravel Jetstream running using a FileMaker database as a data source.
+If you just want to see an example of Jetstream working with FileMaker you can unzip and use the `Jetstream-FileMaker.fmp12` file included in the `dist` folder as an example data source ([or download here](https://github.com/BlueFeatherGroup/Jetstream-FileMaker/raw/main/dist/Jetstream-FileMaker.fmp12.zip)). This file has been configured with the minimum necessary fields to work with Jetstream and already has layouts ready for accessing through the Data API. You can host this file on your FileMaker Server and use it as a testing ground to see Laravel Jetstream running using a FileMaker database as a data source.
 
 Otherwise, read the directions below for how to configure your existing FileMaker database to work with Jetstream. The example file is a great reference for configuring your own database.
 
