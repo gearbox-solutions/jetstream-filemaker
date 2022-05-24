@@ -25,7 +25,7 @@ You will need the following tables:
 * PasswordReset
 * PersonalAccessToken
 
-These tables must also have the minimum required fields to support the features of the Jetstream starter kit. The required tables and fields for your FileMaker database can be found in the `Jetstream-FileMaker.fmp12` file included in the `dist` folder of this package. You can either copy these tables/fields to your database, rename your existing fields, or use the [Eloquent-FileMaker field mapping feature](https://github.com/BlueFeatherGroup/eloquent-filemaker) to map your existing fields to these expected field names.
+These tables must also have the minimum required fields to support the features of the Jetstream starter kit. The required tables and fields for your FileMaker database can be found in the `Jetstream-FileMaker.fmp12` file included in the `dist` folder of this package ([or download here](https://github.com/BlueFeatherGroup/Jetstream-FileMaker/raw/main/dist/Jetstream-FileMaker.fmp12.zip)). You can either copy these tables/fields to your database, rename your existing fields, or use the [Eloquent-FileMaker field mapping feature](https://github.com/BlueFeatherGroup/eloquent-filemaker) to map your existing fields to these expected field names.
 
 ### Set up layouts for Data API access
 The The FileMaker Data API allows access to your tables through layouts in your FileMaker database. Only fields which are on the layouts accessed through the Data API are visible. This means that you MUST include all the fields you want to access through the data API on your layouts.
