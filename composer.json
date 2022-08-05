@@ -9,11 +9,8 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "ext-json": "*",
         "bluefeather/eloquent-filemaker": "^0.2.0",
-        "laravel/jetstream": "^2.8",
-        "laravel/sanctum": "^2.15"
+        "laravel/jetstream": "^2.10"
     },
     "autoload": {
         "psr-4": {
