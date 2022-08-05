@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "bluefeather/eloquent-filemaker": "^0.2.0",
+        "bluefeather/eloquent-filemaker": "^0.2.2",
         "laravel/jetstream": "^2.10"
     },
     "autoload": {

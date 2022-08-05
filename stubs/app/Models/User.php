@@ -31,8 +31,6 @@ class User extends FMModel implements
     use Notifiable;
     use TwoFactorAuthenticatable;
 
-    protected $keyType = "string";
-
 
     /**
      * The attributes that are mass assignable.
