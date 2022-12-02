@@ -1,6 +1,6 @@
 # Jetstream-FileMaker
 ## Introduction
-[Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html) is a great starting point for building web applications. Laravel and Elqouent-FileMaker make it easy to store and retrieve data from a FileMaker database through the FileMaker Data API and then integrate that data into a Laravel/Jetstream app. The default behavior for Jetstream, however, is to use a SQL database such as MySQL or SQLite. It's not normally possible to exclusively use a FileMaker database for everything with Jetstream.
+[Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html) is a great starting point for building web applications. Laravel and Eloquent-FileMaker make it easy to store and retrieve data from a FileMaker database through the FileMaker Data API and then integrate that data into a Laravel/Jetstream app. The default behavior for Jetstream, however, is to use a SQL database such as MySQL or SQLite. It's not normally possible to exclusively use a FileMaker database for everything with Jetstream.
 
 This package is designed to allow you to exclusively use a FileMaker database and the FileMaker Data API as your data source for a Jetstream application. With this package, you no longer need to have a primary SQL database and then use FileMaker for additional data. FileMaker can be the sole database used by your Jetstream app.
 
