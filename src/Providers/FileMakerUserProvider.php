@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Providers;
+namespace GearboxSolutions\JetstreamFileMaker\Providers;
 
 use Closure;
 use Illuminate\Auth\EloquentUserProvider;

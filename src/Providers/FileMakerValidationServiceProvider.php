@@ -1,9 +1,9 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Providers;
+namespace GearboxSolutions\JetstreamFileMaker\Providers;
 
 
-use BlueFeather\JetstreamFileMaker\Validation\DatabasePresenceVerifier;
+use GearboxSolutions\JetstreamFileMaker\Validation\DatabasePresenceVerifier;
 use Illuminate\Validation\ValidationServiceProvider;
 
 class FileMakerValidationServiceProvider extends ValidationServiceProvider

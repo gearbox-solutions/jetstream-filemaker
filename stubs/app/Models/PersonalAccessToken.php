@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use BlueFeather\EloquentFileMaker\Database\Eloquent\FMModel;
+use GearboxSolutions\EloquentFileMaker\Database\Eloquent\FMModel;
 use Laravel\Sanctum\Contracts\HasAbilities;
 
 class PersonalAccessToken extends FMModel implements HasAbilities

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use BlueFeather\EloquentFileMaker\Database\Eloquent\FMModel;
+use GearboxSolutions\EloquentFileMaker\Database\Eloquent\FMModel;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\MustVerifyEmail;
 use Illuminate\Auth\Passwords\CanResetPassword;

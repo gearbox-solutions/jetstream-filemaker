@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Console;
+namespace GearboxSolutions\JetstreamFileMaker\Console;
 
 use Illuminate\Console\Command;
 

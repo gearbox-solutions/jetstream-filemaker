@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Validation;
+namespace GearboxSolutions\JetstreamFileMaker\Validation;
 
 class DatabasePresenceVerifier extends \Illuminate\Validation\DatabasePresenceVerifier
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Auth\Passwords;
+namespace GearboxSolutions\JetstreamFileMaker\Auth\Passwords;
 
 use App\Models\PasswordReset;
 use Carbon\Carbon;

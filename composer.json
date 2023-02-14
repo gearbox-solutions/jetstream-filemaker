@@ -1,28 +1,28 @@
 {
-    "name": "bluefeather/jetstream-filemaker",
+    "name": "gearbox-solutions/jetstream-filemaker",
     "description": "An extension for Laravel Jetstream to make it work with FileMaker as a primary data source",
     "license": "MIT",
     "authors": [
         {
             "name": "David Nahodyl",
-            "email": "david@bluefeathergroup.com"
+            "email": "david@gearboxgo.com"
         }
     ],
     "require": {
-        "bluefeather/eloquent-filemaker": "^0.2.2",
-        "laravel/jetstream": "^2.10"
+        "gearbox-solutions/eloquent-filemaker": "^1.0",
+        "laravel/jetstream": "^2.16"
     },
     "autoload": {
         "psr-4": {
-            "BlueFeather\\JetstreamFileMaker\\": "src/"
+            "GearboxSolutions\\JetstreamFileMaker\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BlueFeather\\JetstreamFileMaker\\Providers\\JetstreamFileMakerServiceProvider",
-                "BlueFeather\\JetstreamFileMaker\\Providers\\PasswordResetServiceProvider",
-                "BlueFeather\\JetstreamFileMaker\\Providers\\FileMakerValidationServiceProvider"
+                "GearboxSolutions\\JetstreamFileMaker\\Providers\\JetstreamFileMakerServiceProvider",
+                "GearboxSolutions\\JetstreamFileMaker\\Providers\\PasswordResetServiceProvider",
+                "GearboxSolutions\\JetstreamFileMaker\\Providers\\FileMakerValidationServiceProvider"
             ]
         }
     },

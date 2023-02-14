@@ -1,9 +1,9 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Providers;
+namespace GearboxSolutions\JetstreamFileMaker\Providers;
 
 
-use BlueFeather\JetstreamFileMaker\Auth\Passwords\PasswordBrokerManager;
+use GearboxSolutions\JetstreamFileMaker\Auth\Passwords\PasswordBrokerManager;
 
 class PasswordResetServiceProvider extends \Illuminate\Auth\Passwords\PasswordResetServiceProvider
 {

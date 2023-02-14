@@ -1,10 +1,10 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Providers;
+namespace GearboxSolutions\JetstreamFileMaker\Providers;
 
 
 use App\Models\User;
-use BlueFeather\JetstreamFileMaker\Console\InstallCommand;
+use GearboxSolutions\JetstreamFileMaker\Console\InstallCommand;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;

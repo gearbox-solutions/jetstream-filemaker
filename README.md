@@ -6,12 +6,12 @@ This package is designed to allow you to exclusively use a FileMaker database an
 
 ## Support
 
-This package is built and maintained by [Blue Feather](https://www.bluefeathergroup.com/). We build fantastic web apps with technologies like Laravel, Vue, React, and Node. If you would like assistance building your own web app, either using this package or other technologies, please [contact us](https://www.bluefeathergroup.com/contact/) for a free introductory consultation to discuss your project. 
+This package is built and maintained by [Gearbox Solutions](https://gearboxgo.com/). We build fantastic web apps with technologies like Laravel, Vue, React, and Node. If you would like assistance building your own web app, either using this package or other technologies, please [contact us](https://gearboxgo.com/) for a free introductory consultation to discuss your project. 
 
 ## Prepare your FileMaker database
 
 ### Quickstart with an example FileMaker database
-If you just want to see an example of Jetstream working with FileMaker you can unzip and use the `Jetstream-FileMaker.fmp12` file included in the `dist` folder as an example data source ([or download here](https://github.com/BlueFeatherGroup/Jetstream-FileMaker/raw/main/dist/Jetstream-FileMaker.fmp12.zip)). This file has been configured with the minimum necessary fields to work with Jetstream and already has layouts ready for accessing through the Data API. You can host this file on your FileMaker Server and use it as a testing ground to see Laravel Jetstream running using a FileMaker database as a data source.
+If you just want to see an example of Jetstream working with FileMaker you can unzip and use the `Jetstream-FileMaker.fmp12` file included in the `dist` folder as an example data source ([or download here](https://github.com/gearbox-solutions/Jetstream-FileMaker/blob/main/dist/Jetstream-FileMaker.fmp12.zip?raw=true)). This file has been configured with the minimum necessary fields to work with Jetstream and already has layouts ready for accessing through the Data API. You can host this file on your FileMaker Server and use it as a testing ground to see Laravel Jetstream running using a FileMaker database as a data source.
 
 Otherwise, read the directions below for how to configure your existing FileMaker database to work with Jetstream. The example file is a great reference for configuring your own database.
 
@@ -25,7 +25,7 @@ You will need the following tables:
 * PasswordReset
 * PersonalAccessToken
 
-These tables must also have the minimum required fields to support the features of the Jetstream starter kit. The required tables and fields for your FileMaker database can be found in the `Jetstream-FileMaker.fmp12` file included in the `dist` folder of this package ([or download here](https://github.com/BlueFeatherGroup/Jetstream-FileMaker/raw/main/dist/Jetstream-FileMaker.fmp12.zip)). You can either copy these tables/fields to your database, rename your existing fields, or use the [Eloquent-FileMaker field mapping feature](https://github.com/BlueFeatherGroup/eloquent-filemaker) to map your existing fields to these expected field names.
+These tables must also have the minimum required fields to support the features of the Jetstream starter kit. The required tables and fields for your FileMaker database can be found in the `Jetstream-FileMaker.fmp12` file included in the `dist` folder of this package ([or download here](https://github.com/gearbox-solutions/Jetstream-FileMaker/blob/main/dist/Jetstream-FileMaker.fmp12.zip?raw=true)). You can either copy these tables/fields to your database, rename your existing fields, or use the [Eloquent-FileMaker field mapping feature](https://github.com/gearbox-solutions/eloquent-filemaker) to map your existing fields to these expected field names.
 
 ### Set up layouts for Data API access
 The The FileMaker Data API allows access to your tables through layouts in your FileMaker database. Only fields which are on the layouts accessed through the Data API are visible. This means that you MUST include all the fields you want to access through the data API on your layouts.
@@ -41,7 +41,7 @@ By default, Laravel looks for pluralized versions of each of the tables. If you 
 
 The example `Jetstream-FileMaker.fmp12` file has these prepared as a demonstration, so you can always look at that for reference.
 
-If you don't want to use the pluralized table names Laravel will be searching for by default, the layout names used for the models can also be configured in each model file by setting the table name directly using the `$table` property. Do not include any configured table prefix, such as `web_` when setting table/layout names. You can refer to the [Laravel](https://laravel.com/docs/9.x/eloquent#table-names) and [Eloquent-FileMaker](https://github.com/BlueFeatherGroup/eloquent-filemaker#setting-a-layout) documentation for more information about layout and table naming.
+If you don't want to use the pluralized table names Laravel will be searching for by default, the layout names used for the models can also be configured in each model file by setting the table name directly using the `$table` property. Do not include any configured table prefix, such as `web_` when setting table/layout names. You can refer to the [Laravel](https://laravel.com/docs/9.x/eloquent#table-names) and [Eloquent-FileMaker](https://github.com/gearbox-solutions/eloquent-filemaker) documentation for more information about layout and table naming.
 
 ## Install and configure Laravel
 Laravel should be installed and configured as normal. You can follow the instructions on the [official Laravel website](https://laravel.com/docs/9.x/installation) to get started.
@@ -66,7 +66,7 @@ With the basic Jetstream installed it is now time to install the Jetstream-FileM
 
 Install Jetstream-FileMaker using Composer
 ```
-composer require bluefeather/jetstream-filemaker
+composer require gearbox-solutions/jetstream-filemaker
 ```
 
 Jetstream-FileMaker needs to update the default Jetstream `User` model and add new, custom models for `PasswordReset` and `PersonalAccessToken`. Install these models using artisan.
@@ -90,7 +90,7 @@ You also need to add a new FileMaker database connection to `config/database.php
   'connections' => [
         'filemaker' => [
             'driver' => 'filemaker',
-            'host' => env('DB_HOST', 'bluefeathergroup.com'),
+            'host' => env('DB_HOST', 'fms.mycompany.com'),
             'database' => env('DB_DATABASE', 'MyDatabaseName'), 
             'username' => env('DB_USERNAME', 'MyUsername'),
             'password' => env('DB_PASSWORD', ''),

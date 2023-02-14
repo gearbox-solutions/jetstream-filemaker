@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueFeather\JetstreamFileMaker\Auth\Passwords;
+namespace GearboxSolutions\JetstreamFileMaker\Auth\Passwords;
 
 class PasswordBrokerManager extends \Illuminate\Auth\Passwords\PasswordBrokerManager
 {
