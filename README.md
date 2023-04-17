@@ -36,8 +36,8 @@ We recommend prefixing layout names you plan on using with the data API so that 
 
 By default, Laravel looks for pluralized versions of each of the tables. If you are also using a layout name prefix your layout names, your layout names would need to be:
 * `web_users`
-* `web_passwordresets` 
-* `web_personalaccesstokens`
+* `web_password_resets` 
+* `web_personal_access_tokens`
 
 The example `Jetstream-FileMaker.fmp12` file has these prepared as a demonstration, so you can always look at that for reference.
 
