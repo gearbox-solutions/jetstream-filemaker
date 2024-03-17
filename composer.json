@@ -10,7 +10,7 @@
     ],
     "require": {
         "gearbox-solutions/eloquent-filemaker": "^1.0",
-        "laravel/jetstream": "^3.0"
+        "laravel/jetstream": "^5.0"
     },
     "autoload": {
         "psr-4": {
