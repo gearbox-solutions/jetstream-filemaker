@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "gearbox-solutions/eloquent-filemaker": "^1.0",
+        "gearbox-solutions/eloquent-filemaker": "^2.0",
         "laravel/jetstream": "^5.0"
     },
     "autoload": {
