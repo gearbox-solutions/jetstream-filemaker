@@ -97,6 +97,8 @@ You also need to add a new FileMaker database connection to `config/database.php
             'prefix' => env('DB_PREFIX', ''),
             'version' => env('DB_VERSION', 'vLatest'),
             'protocol' => env('DB_PROTOCOL', 'https'),
+            'cache_session_token' => env('DB_CACHE_SESSION_TOKEN', true), // set to true to cache the session token between requests and prevent the need to re-login each time. This can be a significant performance improvement!
+            'empty_strings_to_null' => env('DB_EMPTY_STRINGS_TO_NULL', true), // set to false to return empty strings instead of null values when fields are empty in FileMaker
         ],
 ```
 
