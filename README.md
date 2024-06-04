@@ -1,4 +1,8 @@
 # Jetstream-FileMaker
+[![Total Downloads](https://img.shields.io/packagist/dt/gearbox-solutions/jetstream-filemaker)](https://packagist.org/packages/gearbox-solutions/jetstream-filemaker)
+[![Latest Stable Version](https://img.shields.io/packagist/v/gearbox-solutions/jetstream-filemaker)](https://packagist.org/packages/gearbox-solutions/jetstream-filemaker)
+[![License](https://img.shields.io/packagist/l/gearbox-solutions/jetstream-filemaker)](https://github.com/gearbox-solutions/jetstream-filemaker/blob/2.x/LICENSE)
+
 ## Introduction
 [Laravel Jetstream](https://jetstream.laravel.com/2.x/introduction.html) is a great starting point for building web applications. Laravel and Eloquent-FileMaker make it easy to store and retrieve data from a FileMaker database through the FileMaker Data API and then integrate that data into a Laravel/Jetstream app. The default behavior for Jetstream, however, is to use a SQL database such as MySQL or SQLite. It's not normally possible to exclusively use a FileMaker database for everything with Jetstream.
 
@@ -102,11 +106,14 @@ You also need to add a new FileMaker database connection to `config/database.php
         ],
 ```
 
-Finally, set update the session driver and database connection information in the `.env` file. If you're using the example file included with this package you would configure your `.env` as follows (with your real server address in `DB_HOST`):
+Finally, set update the session_driver, cache_store and database connection information in the `.env` file. If you're using the example file included with this package you would configure your `.env` as follows (with your real server address in `DB_HOST`):
 ```
 
 # Use a session driver other than 'database'
 SESSION_DRIVER=file
+
+# Use a cache store other than `database`
+CACHE_STORE=file
 
 DB_CONNECTION=filemaker
 DB_HOST=fms.mycompany.com
